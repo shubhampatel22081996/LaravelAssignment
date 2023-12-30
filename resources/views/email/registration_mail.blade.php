@@ -1,0 +1,6 @@
+<p style="width:100%;padding-bottom:15px;font:13px/20px Arial, Verdana,Geneva,sans-serif;">Dear {{$data['data']['name']}},</p>
+<p style="word-break: break-word;word-wrap: break-word;margin:0;padding:10px 0 0; width:100%;font:12px/20px Arial, Verdana,Geneva,sans-serif;">Here's your credential, </p>
+<p style="word-break: break-word;word-wrap: break-word;margin:0;padding:10px 0 0; width:100%;font:12px/20px Arial, Verdana,Geneva,sans-serif;">Email : {{$data['data']['email']}}.</p>
+<p style="word-break: break-word;word-wrap: break-word;margin:0;padding:10px 0 0; width:100%;font:12px/20px Arial, Verdana,Geneva,sans-serif;">Password : {{$data['data']['password']}}.</p>
+<p style="word-break: break-word;word-wrap: break-word;margin:0;padding:10px 0 0; width:100%;font:12px/20px Arial, Verdana,Geneva,sans-serif;">Thank you for registration,</p>
+<p style="word-break: break-word;word-wrap: break-word;margin:20px 0 0 0;padding:0; width:100%;font:12px/20px Arial, Verdana,Geneva,sans-serif;">Best regards.</p>
