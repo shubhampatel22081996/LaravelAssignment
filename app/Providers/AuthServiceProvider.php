@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Auth;
+use App\Providers\MD5AuthProvider; // Import your MD5AuthProvider
 // use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -19,8 +21,10 @@ class AuthServiceProvider extends ServiceProvider
     /**
      * Register any authentication / authorization services.
      */
-    public function boot(): void
+    public function boot()
     {
-        //
+        Auth::provider('md5', function ($app, array $config) {
+            return new MD5AuthProvider($app['hash'], $config['model']);
+        });
     }
 }
